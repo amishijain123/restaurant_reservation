@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"; //connecting with mongodb
 
 export const dbConnection = () => {
   mongoose
