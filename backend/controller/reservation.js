@@ -10,6 +10,7 @@ const send_reservation = async (req, res, next) => {
 
   try {
     await Reservation.create({ firstName, lastName, email, date, time, phone });
+    //wait until go forward
     res.status(201).json({
       success: true,
       message: "Reservation Sent Successfully!",
