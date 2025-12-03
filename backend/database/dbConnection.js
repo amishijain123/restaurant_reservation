@@ -1,7 +1,7 @@
-import mongoose from "mongoose"; //connecting with mongodb
+import mongoose from "mongoose"; 
 
 export const dbConnection = () => {
-  mongoose
+  mongoose              //connecting with mongodb
     .connect(process.env.MONGO_URI, {
       dbName: "restaurant",
     })

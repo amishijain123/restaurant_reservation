@@ -17,7 +17,7 @@ const Reservation = () => {
   const handleReservation = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post( //connection b/w our frontend and the backend
+      const { data } = await axios.post( //connection b/w our frontend and the backend i.e send the data to backend.
         "http://localhost:4000/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
